@@ -1,1 +1,10 @@
 language: go
+
+go:
+- "1.14.2"
+
+go_import_path: github.com/TheGolurk/travis-test
+
+notifications:
+  on_success: never
+  on_failure: never
