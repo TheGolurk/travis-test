@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-
-	"golang.org/go/src/io"
+	"io"
 )
 
 func main() {
+	fmt.Println("App running")
 	http.HandleFunc("/", sayHello)
 
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":8000", nil))
 }
 
 func sayHello(w http.ResponseWriter, r *http.Request) {
@@ -19,7 +19,20 @@ func sayHello(w http.ResponseWriter, r *http.Request) {
 	if name == "" {
 		name = "uknow"
 	}
-	io.WriteString(
-		w,
-		fmt.Sprintf("Hello %s", name))
+	switch name {
+	case "":
+		name = "uknow"
+	case "andrea":
+		name = "Girlfriend, i love you"
+	case "yiro":
+		name = "YIRO, quedate en tu puta casa"
+	case "miguel":
+		name = "Miguel, que sad que provoca sed.."
+	case "javier":
+		name = "Javier, ola k ase"
+	default:
+		io.WriteString(w, "Introduce algo marico")
+		return
+	}
+	io.WriteString(w, fmt.Sprintf("Hello %s", name))
 }
