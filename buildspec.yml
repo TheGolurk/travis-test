@@ -7,10 +7,7 @@ env:
                 GOPATH: "/home/ubuntu/go"
 
 phases:
-         pre_build:
-                     commands:
-                        - echo Entered the pre_build phase...
-        build:
+             build:
                 run-as: ubuntu
                 commands:
                         - sh runapp.sh
