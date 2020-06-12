@@ -10,7 +10,6 @@ phases:
          pre_build:
                      commands:
                         - echo Entered the pre_build phase...
-                        - cd go/src/github.com/TheGolurk/travis-test
         build:
                 run-as: ubuntu
                 commands:
