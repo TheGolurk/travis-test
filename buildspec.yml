@@ -1,0 +1,20 @@
+version: 0.2
+
+run-as: ubuntu
+
+env:
+        variables:
+                GOPATH: "/home/ubuntu/go"
+
+phases:
+        install:
+                commands:
+                        - echo install phase
+                        - apt-get update -y
+                        - curl -LO https://get.golang.org/$(uname)/go_installer && chmod +x go_installer && ./go_install:er && rm go_installer
+                finally:
+                        - echo finally
+        build:
+                run-as: ubuntu
+                commands:
+                        - sh runapp.sh
