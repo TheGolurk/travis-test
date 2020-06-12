@@ -9,7 +9,16 @@ env:
 phases:
              pre_build:
                 commands:
-                        - echo hola
+                        - echo building... 
              build:
                 commands:
-                        - sh runapp.sh
+                        - echo Build started on `date`
+                        - go build -o app
+             post_build:
+                commands:
+                        - echo Build completed on `date`
+                        - ls -al
+                        - pwd
+artifacts:
+          files:
+          - app
