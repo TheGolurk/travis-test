@@ -10,6 +10,7 @@ phases:
              pre_build:
                 commands:
                         - pwd
+                        - echo hola
              build:
                 run-as: ubuntu
                 commands:
