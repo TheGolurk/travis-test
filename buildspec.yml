@@ -7,12 +7,6 @@ env:
                 GOPATH: "/home/ubuntu/go"
 
 phases:
-        install:
-                commands:
-                        - echo install phase
-                        - apt-get update -y
-                finally:
-                        - echo finally
         build:
                 run-as: ubuntu
                 commands:
