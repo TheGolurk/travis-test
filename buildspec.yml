@@ -1,6 +1,6 @@
 version: 0.2
 
-run-as: ubuntu
+run-as: root
 
 env:
         variables:
@@ -11,6 +11,5 @@ phases:
                 commands:
                         - echo hola
              build:
-                run-as: ubuntu
                 commands:
                         - sh runapp.sh
