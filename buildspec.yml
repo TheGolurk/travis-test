@@ -2,23 +2,24 @@ version: 0.2
 
 run-as: root
 
-env:
-        variables:
-                GOPATH: "/home/ubuntu/go"
+env: 
+  variables: 
+    GOPATH: /home/ubuntu/go
 
-phases:
-             pre_build:
-                commands:
-                        - echo building... 
-             build:
-                commands:
-                        - echo Build started on `date`
-                        - go build -o app
-             post_build:
-                commands:
-                        - echo Build completed on `date`
-                        - ls -al
-                        - pwd
-artifacts:
-          files:
-          - app
+phases: 
+  pre_build: 
+    commands: 
+      - "echo building..."
+  build: 
+    commands: 
+      - "echo Build started on `date`"
+      - "go build -o app"
+  post_build: 
+    commands: 
+      - "echo Build completed on `date`"
+      - "ls -al"
+      - pwd
+
+artifacts: 
+  files: 
+    - app
