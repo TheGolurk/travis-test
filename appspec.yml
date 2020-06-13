@@ -1,7 +1,10 @@
 version: 0.0
-os: linux
-
+os: linux 
+files:
+  - source: /
+    destination: /go/src/github.com/TheGolurk/travis-test
 hooks: 
   ApplicationStart: 
     - location: runapp.sh
-      timeout: 3600
+      timeout: 300
+      runas: root
