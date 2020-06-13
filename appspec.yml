@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 
-hooks:
-        ApplicationStart:
-                - location: "./app"
-                  timeout: 3600
+hooks: 
+  ApplicationStart: 
+    - location: runapp.sh
+      timeout: 3600
