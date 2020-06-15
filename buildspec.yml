@@ -1,11 +1,5 @@
 version: 0.2
 
-run-as: root
-
-env: 
-  variables: 
-    GOPATH: /home/ubuntu/go
-
 phases: 
   pre_build: 
     commands: 
@@ -23,3 +17,5 @@ phases:
 artifacts: 
   files: 
     - app
+    - appspec.yml
+    - buildspec.yml
