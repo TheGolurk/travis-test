@@ -1,6 +1,8 @@
 #!/bin/bash
 pwd
 
+cd /home/ec2-user/go/src/github.com/TheGolurk/travis-test
+
 export PATH=$PATH:/usr/local/go/bin
 source ~/.bash_profile
 
