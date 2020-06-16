@@ -1,6 +1,4 @@
 #!/bin/bash
-cd ~
-
 pwd
 
 export PATH=$PATH:/usr/local/go/bin
