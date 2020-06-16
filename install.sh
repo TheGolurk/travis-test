@@ -10,7 +10,7 @@ if $cmd > 0; then
         echo "Don't exist"
 else
         echo "Exist"
-        kill %1
+        sudo kill %1
 fi
 
 echo "installed"
