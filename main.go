@@ -31,7 +31,7 @@ func sayHello(w http.ResponseWriter, r *http.Request) {
 	case "javier":
 		name = "Javier, ola k ase"
 	default:
-		io.WriteString(w, "Cambio hecho sin bhacer nada mas que un commit a master asdadsa")
+		io.WriteString(w, "......")
 		return
 	}
 	io.WriteString(w, fmt.Sprintf("Hello %s", name))
