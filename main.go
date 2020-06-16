@@ -11,7 +11,7 @@ func main() {
 	fmt.Println("App running")
 	http.HandleFunc("/", sayHello)
 
-	log.Fatal(http.ListenAndServe(":80", nil))
+	log.Fatal(http.ListenAndServe(":3000", nil))
 }
 
 func sayHello(w http.ResponseWriter, r *http.Request) {
