@@ -8,5 +8,3 @@ hooks:
     - location: install.sh
   ApplicationStart: 
     - location: runapp.sh
-  ApplicationStop: 
-    - location: stop.sh
