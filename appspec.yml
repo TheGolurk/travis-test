@@ -1,5 +1,7 @@
 version: 0.0
 os: linux
-hooks: 
+hooks:
+  BeforeInstall:
+    - location: install.sh
   ApplicationStart: 
     - location: runapp.sh
