@@ -5,6 +5,7 @@ files:
     destination: /home/ec2-user/go/src/github.com/TheGolurk/travis-test
 hooks:
   BeforeInstall:
+    - location: beforeinstall.sh
     - location: install.sh
   ApplicationStart: 
     - location: runapp.sh
