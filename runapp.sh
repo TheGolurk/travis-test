@@ -18,4 +18,4 @@ go env
 
 echo "Runing app..."
 
-go build
+go run main.go &
