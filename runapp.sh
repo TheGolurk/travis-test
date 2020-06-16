@@ -7,9 +7,7 @@ export PATH=$PATH:/usr/local/go/bin
 source ~/.bash_profile
 source ~/.bashrc 
 
-go env GOCACHE="on"
-
-go env GOCACHE="/home/ec2-user/.cache/go-build"
+go env -w GOCACHE="/home/ec2-user/.cache/go-build"
 
 go env
 
