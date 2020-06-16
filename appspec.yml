@@ -1,6 +1,6 @@
 version: 0.0
 os: linux
-file:
+files:
   - source: ./
     destination: /home/ec2-user/go/src/github.com/TheGolurk/travis-test
 hooks:
