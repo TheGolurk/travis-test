@@ -16,6 +16,7 @@ phases:
 
 artifacts: 
   files: 
+    - main.go
     - install.sh
     - runapp.sh
     - app
