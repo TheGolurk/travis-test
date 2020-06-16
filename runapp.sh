@@ -1,6 +1,9 @@
 #!/bin/bash
 pwd
 
+jobs
+jobs
+
 export HOME=/home/ec2-user/
 
 cd /home/ec2-user/go/src/github.com/TheGolurk/travis-test
