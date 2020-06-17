@@ -1,3 +1,3 @@
 #!/bin/bash
-pkill go
+killall ./app
 echo "deleted"
