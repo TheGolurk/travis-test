@@ -13,4 +13,8 @@
 #        sudo kill %1
 #fi
 
+cd /home/ec2-user/go/src/github.com/TheGolurk/travis-test
+
+sudo rm app
+
 echo "installed"
