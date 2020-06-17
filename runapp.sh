@@ -18,4 +18,4 @@ go env
 
 echo "Runing app..."
 
-go run main.go  > /dev/null 2>&1 &
+./app > /dev/null 2>&1 &
