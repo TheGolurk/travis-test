@@ -1,3 +1,5 @@
 #!/bin/bash
-killall ./app
+var="$(pgrep app)"
+echo $var
+sudo kill $var
 echo "deleted"
