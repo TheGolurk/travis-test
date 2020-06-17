@@ -1,5 +1,5 @@
 #!/bin/bash
-killall ./app
+
 pwd
 
 export HOME=/home/ec2-user/
